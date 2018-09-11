@@ -1,9 +1,19 @@
 pipeline {
-    agent none
+    agent none 
     stages {
-        stage("Build") {
+        stage('Build') { 
             steps {
-                sh 'mvn clean install'
+                // 
+            }
+        }
+        stage('Test') { 
+            steps {
+                // 
+            }
+        }
+        stage('Deploy') { 
+            steps {
+                // 
             }
         }
     }
