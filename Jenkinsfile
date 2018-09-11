@@ -1,19 +1,9 @@
 pipeline {
-    agent none 
+    agent none
     stages {
-        stage('Build') { 
+        stage('Example') {
             steps {
-                echo "nothing"
-            }
-        }
-        stage('Test') { 
-            steps {
-                echo "nothing"
-            }
-        }
-        stage('Deploy') { 
-            steps {
-                echo "nothing"
+                echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"
             }
         }
     }
